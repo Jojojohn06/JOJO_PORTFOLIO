@@ -25,6 +25,10 @@ hr{
     text-decoration:none ;
     padding: 0.5rem 1rem;
 }
+.active{
+    font-size: large;
+
+}
 .primary-link{
     background-color: var(--primary-color);
     border-radius: 0.5rem;
@@ -47,7 +51,7 @@ list-style: none;
     color: azure;
     padding: 1rem;
     border-bottom-left-radius: 1rem;
-    border-top-right-radius:1rem ;
+
 }
 .navigation.nav-brand{
     text-align: right;
@@ -67,6 +71,7 @@ color:white;
     max-width: 350px;
     display: block;
     margin: auto;
+    padding: 1rem;
 }
 .heading-inverted{
     color: var(--primary-color);
