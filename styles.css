@@ -1,106 +1,147 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap');
 
-body{
+body {
     font-family: 'Ubuntu', sans-serif;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
-hr{
+
+hr {
     margin: 2rem 0rem;
 }
-:root{
-    --primary-color:#6C63FF;
-    --off-blue-color:#F3F4F6;
 
-    --dark-gray:#6b7280;
+:root {
+    --primary-color: #6C63FF;
+    --off-blue-color: #F3F4F6;
+
+    --dark-gray: #6b7280;
 }
-.container{
+
+.container {
     padding: 0rem 1rem;
 }
-.container-center{
+
+.container-center {
     max-width: 600px;
     padding: 0.5rem;
     margin: auto;
 
 }
-.link{
-    text-decoration:none ;
+
+.link {
+    text-decoration: none;
     padding: 0.5rem 1rem;
 }
-.link-active{
+
+.link-active {
     font-size: large;
     font-weight: bold;
 
 }
-.primary-link{
+
+.primary-link {
     background-color: var(--primary-color);
     border-radius: 0.5rem;
     color: azure;
 }
-.secondary-link{
+
+.secondary-link {
     color: var(--primary-color);
     border-radius: 0.5rem;
     border: 1px solid var(--primary-color);
 }
-.non-bullet-list{
-list-style: none;
+
+.non-bullet-list {
+    list-style: none;
+    padding: 0;
 }
+
 .list-inline {
     display: inline;
     padding: 1rem 1rem;
 }
-.navigation{
+
+.navigation {
     background-color: var(--primary-color);
     color: azure;
     padding: 1rem;
     border-bottom-left-radius: 1rem;
 
 }
-.navigation.nav-brand{
+
+.navigation.nav-brand {
     text-align: right;
 }
-.navigation .link{
-color:white; 
+
+.navigation .link {
+    color: white;
 }
-.hero{
+
+.hero {
     padding: 1rem;
 }
-.hero-heading{
+
+.hero-heading {
     padding-top: 1rem;
     text-align: center;
     color: var(--dark-gray);
 }
-.hero-image{
+
+.hero-image {
     max-width: 350px;
     display: block;
     margin: auto;
     padding: 1rem;
 }
-.heading-inverted{
+
+.heading-inverted {
     color: var(--primary-color);
 }
-.section{
+
+.section {
     padding: 2rem;
 }
-.ow{
-    background-color:var(--off-blue-color) ;
-    
+
+.ow {
+    background-color: var(--off-blue-color);
+
 }
-.footer{
+
+.footer {
     background-color: var(--primary-color);
-    padding:2rem 1rem;
-    text-align:center;
+    padding: 2rem 1rem;
+    text-align: center;
     color: white;
-    border-top-right-radius: 1rem  ;
+    border-top-right-radius: 1rem;
 }
-.footer .footer-header{
+
+.footer .footer-header {
     font-weight: bold;
     font-size: large;
     padding-bottom: 1rem;
 }
-.footer .link{
+
+.footer .link {
     color: white;
 }
+
 .color {
     padding-top: 1rem;
     text-align: left;
     color: var(--dark-gray);
+}
+
+@media screen and (max-width: 480px) {
+    .list-inline {
+        padding: 1rem 0;
+    }
+
+    .hero-image {
+        max-width: 250px;
+    }
+
+    .link{
+        padding:   .5rem;
+    }
 }
